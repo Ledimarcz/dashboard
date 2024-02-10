@@ -11,26 +11,58 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 
-    <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
   </head>
   <body>
 
     <header>
-      <div class="container sidebar">
-        <div class="wrap-user">
-          <i class="fa-regular fa-user icon icon-user"></i>
-          <div class="wrap-user-int">
-            <span class="user-name clicable">Usuário</span>
-            <span class="user-edit clicable">Propriedades</span>
+
+      <div class="container sidebar" id="sidebar">
+        <div class="wrap-user-sidebar">
+          <i class="fa-regular fa-user icon icon-user-sidebar"></i>
+          <div class="wrap-user-int-sidebar">
+            <span class="user-name-sidebar clicable">Usuário</span>
+            <span class="user-edit-sidebar clicable">Propriedades</span>
           </div>
         </div>
-        <div class="box-search">
-          <input type="text" name="box-search">
-          <i class="fa-solid fa-magnifying-glass clicable btn-search"></i>
+        <div class="box-search-sidebar">
+          <input type="text" name="box-search-sidebar" placeholder="Pesquisar">
+          <i class="fa-solid fa-magnifying-glass clicable btn-search-sidebar"></i>
         </div>
+        <ul class="links-sidebar">
+          <li class="link-sidebar clicable"><i class="fa-solid fa-house icon"></i>Início</li>
+          <li class="link-sidebar clicable"><i class="fa-regular fa-user icon"></i>Usuário</li>
+          <li class="link-sidebar clicable"><i class="fa-solid fa-newspaper icon"></i>Postagens</li>
+        </ul>
       </div>
+
+      <div class="container navbar" id="navbar">
+        <div class="wrap-header-navbar">
+          <div class="wrap-user-navbar">
+            <i class="fa-regular fa-user icon icon-user-navbar"></i>
+            <span class="user-name-navbar clicable">Usuário</span>
+          </div>
+          <i class="fa-solid fa-bars icon clicable" id="btn-menu"></i>
+        </div>
+        <nav id="menu">
+          <div class="box-search-navbar">
+            <input type="text" name="box-search-navbar" placeholder="Pesquisar">
+            <i class="fa-solid fa-magnifying-glass clicable btn-search-navbar"></i>
+          </div>
+          <ul class="links-navbar">
+            <li class="link-navbar clicable"><i class="fa-solid fa-house icon"></i>Início</li>
+            <li class="link-navbar clicable"><i class="fa-regular fa-user icon"></i>Usuário</li>
+            <li class="link-navbar clicable"><i class="fa-solid fa-newspaper icon"></i>Postagens</li>
+          </ul>
+        </nav>
+      </div>
+
     </header>
+
+    <section class="container content">
+      <h1>Controle de Usuários</h1>
+    </section>
     
   </body>
